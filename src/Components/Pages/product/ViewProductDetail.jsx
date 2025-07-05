@@ -221,7 +221,7 @@ function ViewProductDetail() {
             </ProductFeatureBox>
             <LargeDivider />
             <Box sx={{ marginTop: "20px" }}>
-              {Details?.propertyValues && (
+              {Details?.propertyValues.length > 0 && (
                 <>
                   <ProductGeneralDetailsHeading>
                     General Details
