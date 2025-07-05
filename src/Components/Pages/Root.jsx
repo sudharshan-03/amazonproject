@@ -7,6 +7,7 @@ import {
   Category,
   Landing,
   Login,
+  NotFound,
   Product,
   Register,
   SubCategory,
@@ -18,6 +19,7 @@ import {
 const routes = [
   { path: ROUTE_PATH.login, element: <Login /> },
   { path: ROUTE_PATH.register, element: <Register /> },
+  { path: "*", element: <NotFound /> },
 ];
 
 const nestedRoutes = [
