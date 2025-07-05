@@ -1,6 +1,8 @@
-export const imageAsset = "src/assets/logo.png";
-export const imageBar = "src/assets/logobar.png";
-// export const indianFlag = "https://flagcdn.com/w20/in.png";
+import logo from '../assets/logo.png';
+import logobar from '../assets/logobar.png';
+
+export const imageAsset = logo;
+export const imageBar = logobar;
 export const indianFlag = "https://flagsapi.com/IN/flat/64.png";
 
 
