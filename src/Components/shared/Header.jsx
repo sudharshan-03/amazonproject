@@ -137,17 +137,6 @@ function Header() {
 
   return (
     <>
-      <div
-        style={{
-          backgroundColor: "white",
-          padding: "10px",
-          textAlign: "center",
-          fontFamily: "Rubik",
-        }}
-      >
-        This app is only used for testing purpose
-      </div>
-      {/* <AppBar  sx={{ backgroundColor: "#131921", padding: "0" }}> */}
       <CustomTool position="static">
         <ResponsiveBox>
           <MenuButton fontSize="large" onClick={toggleDrawer}  />
@@ -262,7 +251,6 @@ function Header() {
           </CustomToolTip>
         </CustomLangAndNameBox>
       </CustomTool>
-      {/* </AppBar> */}
       <SDrawer open={open} onClose={toggleDrawer}>
         <MobileMenu toggleDrawer={toggleDrawer} />
       </SDrawer>
