@@ -112,7 +112,7 @@ function Product() {
                 <ProductImgBox>
                   <ProductImg
                     src={
-                      product.fileBaseUrl +
+                      product.fileBaseUrl.replace("http://api-ecommerce-app.bluetickcoders.com", "/api") +
                       product.productImages[0].productImagePath
                     }
                     alt="product"
