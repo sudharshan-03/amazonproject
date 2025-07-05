@@ -38,7 +38,7 @@ function Landing() {
     <>
       <WrapBox>
         <img
-          src={banner[0]?.bannerImagePath}
+          src={banner[0]?.bannerImagePath.replace("http://api-ecommerce-app.bluetickcoders.com", "/api")}
           alt="banner"
           style={{
             width: "100%",
@@ -54,7 +54,7 @@ function Landing() {
               <CardinTypo>{land.name}</CardinTypo>
               <CardinImg
                 src={
-                  land.product[0].fileBaseUrl +
+                  land.product[0].fileBaseUrl.replace("http://api-ecommerce-app.bluetickcoders.com", "/api") +
                   land.product[0].productImages[0].productImagePath
                 }
                 alt="Product images"
