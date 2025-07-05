@@ -118,7 +118,7 @@ function ViewProductDetail() {
         <ViewProductBox>
           <ProductImageBox>
             <ProductImage
-              src={Details.productImages?.[0].productImagePath}
+              src={Details.productImages?.[0]?.productImagePath.replace("http://api-ecommerce-app.bluetickcoders.com", "/api")}
               alt="product image"
             />
           </ProductImageBox>
