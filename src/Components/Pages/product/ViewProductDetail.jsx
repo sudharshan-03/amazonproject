@@ -118,7 +118,10 @@ function ViewProductDetail() {
         <ViewProductBox>
           <ProductImageBox>
             <ProductImage
-              src={Details.productImages?.[0]?.productImagePath.replace("http://api-ecommerce-app.bluetickcoders.com", "/api")}
+              src={Details.productImages?.[0]?.productImagePath.replace(
+                "http://api-ecommerce-app.bluetickcoders.com",
+                "/api"
+              )}
               alt="product image"
             />
           </ProductImageBox>
@@ -218,11 +221,11 @@ function ViewProductDetail() {
             </ProductFeatureBox>
             <LargeDivider />
             <Box sx={{ marginTop: "20px" }}>
-              <ProductGeneralDetailsHeading>
-                General Details
-              </ProductGeneralDetailsHeading>
               {Details?.propertyValues && (
                 <>
+                  <ProductGeneralDetailsHeading>
+                    General Details
+                  </ProductGeneralDetailsHeading>
                   {visibleProps?.map((item, index) => (
                     <ProductGeneralDetailsGrid key={index}>
                       <ProductGeneralDesc>{item.name}</ProductGeneralDesc>
