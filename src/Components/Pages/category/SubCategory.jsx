@@ -39,7 +39,7 @@ function SubCategory() {
           {sCategories.map((category, index) => (
             <Box key={index}>
               <CategoryInBox onClick={() => navigate(`/product?subCategoryId=${category.id}`)}>
-                <CategoryImage src={category?.product[0]?.productImages[0].productImagePath} alt="" />
+                <CategoryImage src={category?.product[0]?.productImages[0].productImagePath.replace("http://api-ecommerce-app.bluetickcoders.com", "/api")} alt="" />
               </CategoryInBox>
               <Typography sx={{ textAlign: "center", fontSize: "14px", fontWeight: "500", paddingBlock: "6px", color: "#2f2f2f" }}>
                 {category.name}

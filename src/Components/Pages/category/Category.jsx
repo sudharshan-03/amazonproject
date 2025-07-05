@@ -32,7 +32,7 @@ function Category() {
             <Box key={index} sx={{cursor: "pointer"}}>
               <CategoryInBox onClick={() => navigate(`/subCategory?id=${category.id}`)}>
                 <CategoryImage
-                  src={category.categoryImagePath}
+                  src={category.categoryImagePath.replace("http://api-ecommerce-app.bluetickcoders.com", "/api")}
                   alt="" />
               </CategoryInBox>
               <Typography sx={{ textAlign: "center", fontSize: "14px", fontWeight: "500", paddingBlock: "6px", color: "#2f2f2f" }}>
